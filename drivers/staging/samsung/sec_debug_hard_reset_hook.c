@@ -90,7 +90,7 @@ static enum hrtimer_restart hard_reset_hook_callback(struct hrtimer *hrtimer)
 	check_hard_reset_key_pressed();
 	pr_err("Hard Reset\n");
 	hard_reset_occurred = true;
-	BUG();
+	/*BUG();*/
 	return HRTIMER_RESTART;
 }
 
